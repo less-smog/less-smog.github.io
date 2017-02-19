@@ -1,0 +1,92 @@
+.page {
+    &-header {
+        background-color: $color-3;
+        font-size:        $font-size-title;
+        line-height:      3em;
+        text-align:       center;
+        text-shadow:      1px 1px 1px fade-out(black, 0.1);
+
+        @include media-query(640px) {
+            font-size: $font-size-title / 2.5;
+        }
+    }
+
+    &-title {
+        &-link {
+            color:           $color-1;
+            text-decoration: none;
+        }
+    }
+
+    &-nav {
+        background-color: $color-2;
+        font-size:        $font-size-nav;
+        line-height:      5em;
+        margin-bottom:    $intersection;
+        text-align:       center;
+
+        &-link {
+            color:           $color-1;
+            margin:          0 $font-size;
+            text-decoration: none;
+            text-shadow:     1px 1px fade-out(black, 0.5);
+            transition:      opacity $transition-ultrafast ease;
+
+            @include media-query(640px) {
+                display: block;
+                margin:  0;
+            }
+        }
+
+        &:hover &-link {
+            opacity: 0.9;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-section {
+        margin: 0 auto $intersection;
+        width:  $page-width;
+
+        @include media-query($page-width) {
+            width: auto;
+        }
+    }
+
+    &-heading {
+        color:       $color-3;
+        font-size:   $font-size-heading;
+        font-weight: 500;
+        line-height: 3em;
+        text-align:  center;
+        text-shadow: 1px 1px white;
+
+        @include media-query(640px) {
+            font-size: $font-size-heading / 1.25;
+        }
+    }
+
+    &-textchunk {
+        line-height: 2em;
+        padding:     2 * $font-size;
+
+        @include media-query(640px) {
+            padding: $font-size / 1.5;
+        }
+    }
+
+    &-footer {
+        color:      $color-grey;
+        margin:     4*$font-size auto 0;
+        padding:    $font-size 0 $font-size;
+        text-align: center;
+        width:      $page-width;
+
+        @include media-query($page-width) {
+            width: auto;
+        }
+    }
+}

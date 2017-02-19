@@ -1,0 +1,30 @@
+// font
+$font-family: Ubuntu, sans-serif;
+$font-size: 20px;
+
+$font-size-title: 4 * $font-size;
+$font-size-nav: $font-size;
+$font-size-heading: 2 * $font-size;
+
+$line-height: 1.5em;
+
+// colors
+$color-text: #222;
+
+$color-1: #f8f8ff; // cream
+$color-2: #2f4f4f; // blueslategray
+$color-3: #263015; // dark
+$color-4: #b37437; // smoggy
+
+$color-grey: #666;
+
+$bg-body: $color-1;
+
+$transition-ultrafast: 125ms;
+$transition-fast: 250ms;
+$transition-standard: 500ms;
+$transition-long: 1000ms;
+
+$page-width: 1000px;
+
+$intersection: 4 * $font-size;
